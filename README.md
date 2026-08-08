@@ -1,6 +1,4 @@
 # Trade-Vault-to-Notion
-
-# Trade-Vault-to-Notion
 ### What is this program:
 This program connects a small Python trade journal directly to a live Notion database. Instead of manually typing trade details into Notion every time, you enter them once in the terminal, and the program creates a new row in your Notion table automatically — pair, entry date, result, and direction, all filled in.
 
