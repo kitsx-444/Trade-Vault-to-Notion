@@ -17,7 +17,7 @@ Manually logging every trade into Notion was repetitive and easy to put off. Thi
 2. How to structure a real external API request: headers, authentication, and matching each field to the exact data shape an API expects.
 3. Why credentials should never be hardcoded, using `.env` files and `.gitignore` to keep secrets out of version control.
 
-### Setup — before running this yourself:
+### Setup before running this yourself:
 
 **1. Get a Notion integration token**
 - Go to [notion.so/profile/integrations](https://www.notion.so/profile/integrations)
