@@ -1,21 +1,21 @@
 # Trade-Vault-to-Notion
 ### What is this program:
-This program connects a small Python trade journal directly to a live Notion database. Instead of manually typing trade details into Notion every time, you enter them once in the terminal, and the program creates a new row in your Notion table automatically — pair, entry date, result, and direction, all filled in.
+This program connects a small Python trade journal directly to a live Notion database. Instead of manually typing trade details into Notion every time, you enter them once in the terminal, and the program creates a new row in your Notion table automatically, pair, entry date, result, and direction, all filled in.
 
 ### Why this program matters:
-Manually logging every trade into Notion was repetitive and easy to put off. This closes that gap — trades get logged the moment they're entered, straight into the same table used for tracking performance, with no copy-pasting between apps.
+Manually logging every trade into Notion was repetitive and easy to put off. This closes that gap, trades get logged the moment they're entered, straight into the same table used for tracking performance, with no copy-pasting between apps.
 
 ### What is included in this program:
-1. Object-oriented design — `Trade`, `Account`, and `Trader` classes working together (composition)
+1. Object-oriented design: `Trade`, `Account`, and `Trader` classes working together (composition)
 2. `datetime` for automatic trade timestamps
 3. Environment variables (`.env` + `python-dotenv`) to keep API credentials out of the code
 4. The `requests` library for real API calls
-5. Notion's REST API — creating pages inside a database with typed properties (title, date, number, select)
+5. Notion's REST API: creating pages inside a database with typed properties (title, date, number, select)
 
 ### What did I learn:
-1. How classes can hold and call into other classes (composition) — a `Trader` owns an `Account`, which stores a list of `Trade` objects, and methods reach across all three.
-2. How to structure a real external API request — headers, authentication, and matching each field to the exact data shape an API expects.
-3. Why credentials should never be hardcoded — using `.env` files and `.gitignore` to keep secrets out of version control.
+1. How classes can hold and call into other classes (composition), a `Trader` owns an `Account`, which stores a list of `Trade` objects, and methods reach across all three.
+2. How to structure a real external API request: headers, authentication, and matching each field to the exact data shape an API expects.
+3. Why credentials should never be hardcoded, using `.env` files and `.gitignore` to keep secrets out of version control.
 
 ### Setup — before running this yourself:
 
