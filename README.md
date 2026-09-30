@@ -41,11 +41,38 @@ Manually logging every trade into Notion was repetitive and easy to put off. Thi
 ```
 NOTION_TOKEN=your_token_here
 NOTION_DATABASE_ID=your_database_id_here
+NOTION_SUMMARY_PAGE_ID=<your_database_id_here>
+NOTION_EQUITY_ID=<your_page_id_here>
+
 ```
 
 **6. Install dependencies**
 ```
 pip install python-dotenv requests
+altgraph==0.17.5
+certifi==2026.7.22
+charset-normalizer==3.4.9
+contourpy==1.3.3
+cycler==0.12.1
+fonttools==4.64.0
+idna==3.18
+kiwisolver==1.5.1
+matplotlib==3.11.1
+numpy==2.5.3
+packaging==26.3
+pefile==2024.8.26
+pillow==12.3.0
+pyinstaller==6.22.1
+pyinstaller-hooks-contrib==2026.6
+pyparsing==3.3.2
+python-dateutil==2.9.0.post0
+python-dotenv==1.2.2
+pywin32-ctypes==0.2.3
+requests==2.34.2
+setuptools==84.0.0
+six==1.17.0
+urllib3==2.7.0
+
 ```
 
 **7. Run it**
@@ -55,8 +82,7 @@ python main.py
 
 ### Output example:
 ```
-Current balance: $1030
-Trades logged: 2
+Type 1 to add trades, type 2 to upload historical trades from CSV, type 3 to view your performance, type 4 to view your equity curve, type 5 to quit: 
 ```
 
 *(Corresponding rows also appear live in the connected Notion database.)*
