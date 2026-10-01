@@ -1,0 +1,14 @@
+.env
+__pycache__/
+.idea/
+.venv/
+build/
+dist/
+dd.py
+equity_graph.png
+ommitable.py
+equity_graph.svg
+optimized_data.csv
+Errors to fix
+Trade Vault v.04.spec
+Trade Vault v.05.spec
